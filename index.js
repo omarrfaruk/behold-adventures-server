@@ -30,4 +30,18 @@ mongoose.connect(MONGODB_URL)
         app.listen(port, () => {
             console.log(`server is running on port ${port}`);
         })
-    }).catch(err => console.log(`${err} did not connect`))
+    })
+    .catch(err => console.log(`${err} did not connect`))
+
+/**
+ * 
+/**
+* {
+"id": 123,
+"gender": "male",
+"name": "mia",
+"contact": 123,
+"address": "Comilla",
+"photoUrl": null
+}
+ */
