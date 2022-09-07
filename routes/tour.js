@@ -1,7 +1,7 @@
 import express from "express"
 const router = express.Router()
 
-import { createTour, deleteTour, getTour, getRelatedTours, getToursBySearch, getTourByUser, getTours, updateTour, getToursByTags } from "../controllers/tour.js"
+import { createTour, deleteTour, getTour, getRelatedTours, getToursBySearch, getTourByUser, getTours, updateTour, getToursByTags, likeTour } from "../controllers/tour.js"
 import auth from "../middleware/auth.js";
 
 
@@ -16,5 +16,6 @@ router.post('/', auth, createTour);
 router.delete('/:id', auth, deleteTour);
 router.patch('/:id', auth, updateTour);
 router.get('/userTours/:id', auth, getTourByUser);
+router.patch("/like/:id", auth, likeTour);
 
 export default router;

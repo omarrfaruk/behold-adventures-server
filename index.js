@@ -33,15 +33,3 @@ mongoose.connect(MONGODB_URL)
     })
     .catch(err => console.log(`${err} did not connect`))
 
-/**
- * 
-/**
-* {
-"id": 123,
-"gender": "male",
-"name": "mia",
-"contact": 123,
-"address": "Comilla",
-"photoUrl": null
-}
- */
