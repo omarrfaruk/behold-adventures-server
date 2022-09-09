@@ -21,9 +21,7 @@ app.use('/tour', tourRouter)
 app.get('/', (req, res) => {
     res.send("it's home page")
 })
-app.all('*', (req, res) => {
-    res.send("No route Found")
-})
+
 
 
 const port = process.env.PORT || 5000;
